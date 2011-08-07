@@ -1,5 +1,8 @@
 #ifndef PIN_H
 #define PIN_H
+
+#include <iostream>
+
 namespace ds {
 
 /**
