@@ -1,0 +1,1 @@
+./Debug/main.o ./Debug/core_pin.o ./Debug/core_node.o

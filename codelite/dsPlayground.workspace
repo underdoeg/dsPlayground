@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="dsPlayground" Database="./dsPlayground.tags">
+  <Project Name="coreLibOfTest" Path="/home/phwhitfield/programming/openFrameworks/apps/dsPlayground/coreLibOfTest/coreLibOfTest.project" Active="Yes"/>
+  <Project Name="coreLibTest1" Path="/home/phwhitfield/programming/openFrameworks/apps/dsPlayground/coreLibTest1/coreLibTest1.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="coreLibOfTest" ConfigName="Debug"/>
+      <Project Name="coreLibTest1" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="coreLibOfTest" ConfigName="Release"/>
+      <Project Name="coreLibTest1" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

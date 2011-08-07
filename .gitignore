@@ -1,0 +1,8 @@
+*.tags
+*.session
+*modex.so
+*modexp64.so
+*.d
+*.o
+*.mk
+
