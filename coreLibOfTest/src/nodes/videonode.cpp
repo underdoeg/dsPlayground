@@ -2,12 +2,17 @@
 
 using namespace ds;
 
-VideoNode::VideoNode()
+void VideoNode::load(string videoFile)
 {
-	addOutPin(new Pin< ofPixels_<unsigned char> >() );
+	addOutPin(&videoOutPin);
+	player.loadMovie(videoFile);
+	if(player.isLoaded()){
+		startThread();
+	}
 }
 
-VideoNode::~VideoNode()
-{
-}
 
+void VideoNode::threadedFunction()
+{
+	videoOutPin.setData(data);
+}

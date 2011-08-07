@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "videonode.h"
 
 class coreLibOfTestApp : public ofBaseApp{
 
@@ -18,5 +19,7 @@ class coreLibOfTestApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+
+		VideoNode v1;
+		VideoNode v2;
 };

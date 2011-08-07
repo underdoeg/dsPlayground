@@ -4,6 +4,8 @@
 void coreLibOfTestApp::setup(){
 	ofSetWindowTitle("coreLibOfTestApp");
 	ofBackground(0,0,0);
+	v1.load("bridge.mp4");
+	v2.load("pseudoLive.mp4");
 }
 
 //--------------------------------------------------------------
