@@ -8,14 +8,20 @@ namespace ds {
  **/
 class PinBase {
 
+protected:
+	void dataChanged();
 };
 
 /**
  * Pin is a templated version ofPinBase
  **/
 template <class type>
-class Pin: public PinBase{
+class Pin: public PinBase {
 public:
+	void setData(type d) {
+		data = d;
+		dataChanged();
+	}
 	type data;
 };
 

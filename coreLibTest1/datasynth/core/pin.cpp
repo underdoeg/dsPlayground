@@ -2,3 +2,7 @@
 
 using namespace ds;
 
+void PinBase::dataChanged()
+{
+
+}
