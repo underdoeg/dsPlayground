@@ -14,6 +14,8 @@ public:
 
 	ds::Pin<ofPixels> videoIn1;
 	ds::Pin<ofPixels> videoIn2;
+
+	ds::Pin<ofPixels> videoOut;
 };
 
 #endif // VIDEOFILTERNODE_H

@@ -4,12 +4,14 @@
 #include "core/node.h"
 #include "ofMain.h"
 
-class glRenderNode: public ds::Node{
+class GlRenderNode: public ds::Node{
 
 public:
-	glRenderNode();
-	~glRenderNode();
+	GlRenderNode();
+	~GlRenderNode();
+	void draw(ofEventArgs &e);
 
+	ds::Pin<ofPixels> imgIn;
 private:
 	ofGLRenderer renderer;
 };

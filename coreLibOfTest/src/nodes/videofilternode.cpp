@@ -12,7 +12,7 @@ VideoFilterNode::~VideoFilterNode()
 
 }
 
-void VideoFilterNode::onVideo(ofPixels)
+void VideoFilterNode::onVideo(ofPixels p)
 {
-	cout << "I got video" << endl;
+	videoOut.setData(p);
 }

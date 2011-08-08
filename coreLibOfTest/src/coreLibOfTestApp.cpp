@@ -11,8 +11,7 @@ void coreLibOfTestApp::setup(){
 	v2.load("pseudoLive.mp4");
 
 	v1.videoOutPin.connect(&filter.videoIn1);
-
-	//Connection<ofPixels>* vidConnect1 = new Connection<ofPixels>(&v1.videoOutPin, &filter.videoIn1);
+	filter.videoOut.connect(&render.imgIn);
 }
 
 //--------------------------------------------------------------
