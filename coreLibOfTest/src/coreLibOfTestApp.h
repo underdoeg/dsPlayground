@@ -1,5 +1,6 @@
 #pragma once
 
+#include "videofilternode.h"
 #include "ofMain.h"
 #include "videonode.h"
 
@@ -22,4 +23,5 @@ class coreLibOfTestApp : public ofBaseApp{
 
 		VideoNode v1;
 		VideoNode v2;
+		VideoFilterNode filter;
 };

@@ -10,7 +10,7 @@ OF_ROOT = ../../..
 # for example search paths like:
 # USER_CFLAGS = -I src/objects
 
-USER_CFLAGS = -I ../coreLibTest1/datasynth -I src/nodes
+USER_CFLAGS = -I ../coreLibTest1/datasynth -I src/nodes -I ../libs
 
 
 # USER_LDFLAGS allows to pass custom flags to the linker

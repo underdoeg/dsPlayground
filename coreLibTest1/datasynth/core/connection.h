@@ -6,14 +6,23 @@
 namespace ds
 {
 
+template <class type>
 class Connection {
 
 public:
-	Connection(PinBase* from, PinBase* to);
+	Connection(Pin<type>* from_, Pin<type>* to_){
+		from = from_;
+		to = to_;
+		//boost::bind(&Pin<type>::setData, to);
+		//boost::function<void(type)> f = boost::bind(&Pin<type>::setData, to, _1);
+		//from->signal.connect);//(&Pin<type>::setData, to);
+		//from->addListener();
+
+	};
 	~Connection();
 private:
-	PinBase* from;
-	PinBase* to;
+	Pin<type>* from;
+	Pin<type>* to;
 };
 
 }

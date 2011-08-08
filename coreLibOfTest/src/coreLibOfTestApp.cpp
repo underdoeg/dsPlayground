@@ -1,5 +1,7 @@
 #include "coreLibOfTestApp.h"
 
+using namespace ds;
+
 //--------------------------------------------------------------
 void coreLibOfTestApp::setup(){
 	ofSetWindowTitle("coreLibOfTestApp");
@@ -7,6 +9,10 @@ void coreLibOfTestApp::setup(){
 	ofSetFrameRate(100);
 	v1.load("bridge.mp4");
 	v2.load("pseudoLive.mp4");
+
+	v1.videoOutPin.connect(&filter.videoIn1);
+
+	//Connection<ofPixels>* vidConnect1 = new Connection<ofPixels>(&v1.videoOutPin, &filter.videoIn1);
 }
 
 //--------------------------------------------------------------

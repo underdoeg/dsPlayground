@@ -12,11 +12,12 @@ public:
 	void load(string videoFile);
 	void threadedFunction();
 
-	ofVideoPlayer* player;
+	ds::Pin< ofPixels > videoOutPin;
+	ofPixels data;
+
 private:
-	ds::Pin< ofPixels_<unsigned char> > videoOutPin;
-	ofPixels_<unsigned char> data;
 	string videoFile;
+	ofVideoPlayer* player;
 };
 
 #endif // VIDEONODE_H

@@ -2,6 +2,7 @@
 #define PIN_H
 
 #include <iostream>
+#include "boost/signals2/signal.hpp"
 
 namespace ds {
 
@@ -12,7 +13,7 @@ namespace ds {
  **/
 class PinBase {
 protected:
-	void dataChanged();
+
 };
 
 /**
@@ -27,7 +28,7 @@ public:
 	 */
 	void setData(type d) {
 		data = d;
-		dataChanged();
+		notifyDataChange();
 	}
 
 	/**
@@ -37,8 +38,25 @@ public:
 	type getData(){
 		return data;
 	}
+
+	void connect(Pin<type>* p){
+		connect(boost::bind(&Pin<type>::setData, p, _1));
+	}
+
+	void connect(boost::function<void(type)> f){
+		signal.connect(f);
+	}
+
+protected:
+	void notifyDataChange(){
+		signal(data);
+	}
+
+
 private:
+	boost::signals2::signal<void (type)> signal;
 	type data;
+
 };
 
 }

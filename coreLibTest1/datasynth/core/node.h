@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "pin.h"
+#include "connection.h"
 
 namespace ds {
 
