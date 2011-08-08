@@ -21,7 +21,11 @@ protected:
  **/
 template <class type>
 class Pin: public PinBase {
-public:
+	public:
+
+	Pin():isNewData(false){
+	}
+
 	/**
 	 * @brief set the data of a pin
 	 * @param d
@@ -47,6 +51,7 @@ public:
 		signal.connect(f);
 	}
 
+	bool isNewData;
 protected:
 	void notifyDataChange(){
 		signal(data);

@@ -16,6 +16,8 @@
       <File Name="src/nodes/videonode.cpp"/>
       <File Name="src/nodes/videofilternode.h"/>
       <File Name="src/nodes/videofilternode.cpp"/>
+      <File Name="src/glrendernode.h"/>
+      <File Name="src/glrendernode.cpp"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="config">
